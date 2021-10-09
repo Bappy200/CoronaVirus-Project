@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, Image, Platform, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
+import { Alert, Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Card from '../Card/Card';
 import LodingScreen from '../LogingScreen/LodingScreen';
+
 
 
 
@@ -49,7 +50,7 @@ function Home() {
 
                 <View style={style.golbalTitle}>
                     <View style={style.topHalf}>
-                        <Text style={style.titleText}>Golbal Case</Text>
+                        <Text style={style.titleText}>Global Case</Text>
                         <Text style={style.globalCase}>{globalData.cases}</Text>
                     </View>
                     <View style={[style.topHalf, style.recivedState]}>
@@ -77,7 +78,7 @@ function Home() {
 const style = StyleSheet.create({
     container:{
         flex:1,
-        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+        // paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     },
     cards:{
         flex:1,
@@ -89,7 +90,7 @@ const style = StyleSheet.create({
     },
     globalCase:{
         fontSize:25,
-        color:'red',
+        color:'#FF0075',
         fontWeight:'600',
     },
     imageCorona:{

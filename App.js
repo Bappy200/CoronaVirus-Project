@@ -1,12 +1,18 @@
 
 import React from 'react';
-import Home from './apps/Home/Home';
+import { StatusBar } from 'react-native';
+import RootNavigator from './apps/TabNavigator/RootNavigator ';
+
 
 
 
 export default function App() {
   return (
-    <Home></Home>
+    <>
+    
+    <StatusBar hidden/>
+    <RootNavigator/>
+    </>
   );
 }
 

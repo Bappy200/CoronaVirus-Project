@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "This is a Corona Virus information app. The new update is coming soon... Create by Sajjadul Islam Bappy.",
+    "githubUrl": "https://github.com/Bappy200/CoronaVirus-Project"
   }
 }
